@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "stylesheet" href="../css/listings.css">
+	<title>SportsLink List</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			background: linear-gradient(to right,#36c892, #223f85);
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: auto;
+			padding: 20px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		.venue-list {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.venue {
+			display: flex;
+			align-items: center;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            background-color: aliceblue;
+		}
+
+		.venue img {
+			width: 100px;
+			height: 100px;
+			margin-right: 20px;
+			object-fit: cover;
+			border-radius: 50%;
+			border: 2px solid #ccc;
+		}
+
+		.venue .info {
+			flex: 1;
+		}
+
+		.venue h2 {
+			margin: 0;
+			margin-bottom: 10px;
+			font-size: 1.5em;
+		}
+
+		.venue .rating {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.venue .rating i {
+			color: #ffc107;
+			margin-right: 5px;
+		}
+
+		.venue p {
+			margin: 0;
+			margin-bottom: 5px;
+			font-size: 1.1em;
+		}
+
+		.btn {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			cursor: pointer;
+			padding: 10px 20px;
+			border-radius: 5px;
+			margin-top: 10px;
+			font-size: 1.1em;
+			transition: all 0.3s ease;
+		}
+
+		.btn:hover {
+			background-color: #3e8e41;
+		}
+
+        .venue {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .venue-title {
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .venue img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .venue-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .venue-location {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .venue-rating {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        #specific-venue{
+            margin-right: 60px;
+        }
+
+        #vne{
+            margin-top: 200px;
+        }
+</style>
+</head>
+<body>
+    <header>
+		<nav>
+			<ul>
+                <li><h1><a id="title" href="homepage.html">SportsLink</a></h1></li>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="#venues">Venues</a></li>
+				<li><a href="venue-registration.html">Register</a></li>
+				<li><a href="homepage.html #about">About</a></li>
+			</ul>
+		</nav>
+		<a href="profilepage.html"><img id="user-img" src="../images/user.png" alt="User profile"></a>
+	</header>
+	<div class="container">
+        <div class="venue" id="vne">
+            <h3 class="venue-title">Southridge School Football Field</h3>
+            <img src="../images/vball.jpg" alt="Sports Arena">
+            <div class="venue-info">
+                <p class="venue-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="venue-location">Southridge, Alabang</span>
+                </p>
+            </div>
+            <button class="venue-button">Book Now</button>
+        </div>
+
+        <div class="venue">
+            <h3 class="venue-title">Tagaytay Highlands Golf Course</h3>
+            <img src="../images/tennis.jpg" alt="Sports Arena">
+                <div class="venue-info">
+                    <p class="venue-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="venue-location">Tagaytay, Highlands</span>
+                    </p>
+                </div>
+            <button class="venue-button">Book Now</button>
+        </div>
+        
+        <div class="venue">
+            <h3 class="venue-title">Tagaytay Highlands Golf Course</h3>
+            <img id="dlsu" src="../images/tennis.jpg" alt="Sports Arena">
+                <div class="venue-info">
+                    <p class="venue-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="venue-location" id="specific-venue">Taft, Malate</span>
+                    </p>
+                </div>
+            <button class="venue-button">Book Now</button>
+        </div>
+    </div>
+</body>

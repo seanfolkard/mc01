@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="../css/newacct.css">
+    <link rel = "stylesheet" href="../css/style.css">
+    <script src="../js/newacct.js"></script>
+    <title>SportsLink - Sign Up</title>
+</head>
+<body>
+    <h1 class="landing-page-title">SportsLink</h1>
+    <div class = "new-account">
+        <div class = "create-account-container">
+            <h2>Create a New Account</h2>
+            <hr>
+            <form class = "form" id = "new-account" action = "homepage.html">
+                <label for="firstname" id="firstname-label">First Name<span class="required">*</span></label>
+                <input type="text" name="firstname" id="firstname" required>
+                <label for="lastname" id = "lastname">Last Name<span class="required">*</span></label>
+                <input type="text" name="lastname" id="lastname" required><br>
+
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input type="email" name="email" placeholder="example@gmail.com" id="email" required><br>
+
+                <label for="contact">Contact No.<span class="required">*</span></label>
+                <input type="tel" name="contact" placeholder="09*********" id="contact"> (Optional)<br>
+
+                <label for="pword">New Password<span class="required">*</span></label>
+                <input type="password" name="pword" id="pword" required><br>
+
+                <label for="dob">Date of Birth<span class="required">*</span></label>
+                <input type="date" name="dob" id="dob" required><br>
+
+                Gender<span class="required">*</span><br>
+                <input type="radio" id="genderChoice1" name="gender" value="female" id="genderChoice1"/>
+                <label for="genderChoice1">Female</label>
+                <input type="radio" id="genderChoice2" name="gender" value="male" id="genderChoice2" />
+                <label for="genderChoice2">Male</label>
+                <input type="radio" id="genderChoice3" name="gender" value="non-binary" id="genderChoice3"/>
+                <label for="genderChoice3">Prefer not to say</label><br><br>
+
+                <input type="checkbox" name = "t&c" id="t&c" required>
+                <label for = "t&c">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.</label><br><br>
+
+                <input type="button" value="Back" id = "back-btn" onclick="history.back()">
+                <input id = "create-acct-btn" type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</body>

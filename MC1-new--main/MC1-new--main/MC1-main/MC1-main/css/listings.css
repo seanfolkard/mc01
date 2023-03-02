@@ -1,0 +1,89 @@
+:root{
+    --text-primary: #262626;
+    --text-accent: aliceblue;
+    --bg-color: #36c892, #223f85;
+    --cont-bg-color: #fafafa;
+    --border: #e8eaed;
+    --required: red;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --input-border: #ccc;
+    --title: aliceblue;
+    --user-img: aliceblue;
+    --footer: grey;
+    --hover: #223f85;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position: absolute;
+    border: 1px solid transparent;
+    height: 0rem;
+    top: 0px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 50px;
+}
+
+li{
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--text-accent);
+}
+
+li:hover{
+    text-decoration: underline;
+    color: var(--title);
+}
+
+#title{
+    color:white;
+    font-style: italic;
+    margin-right: 600px;
+    text-decoration: none;
+}
+
+#user-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    vertical-align: baseline;
+    border: 4px solid var(--user-img);
+    margin-top: 55px;
+    margin-left: 50%;
+    background-color: var(--user-img);
+}
+
+#user-img:hover{
+    border-color: var(--hover);
+}
+
+ul{
+    margin-top: 65px;
+    margin-left: 0px;
+}
+
+li{
+    margin-top: 47px;
+}
+
+h1{
+    margin-left: 189px;
+}

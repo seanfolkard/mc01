@@ -1,0 +1,100 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-ui-4');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.user-profile.container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    margin-top: 200px;
+}
+
+.card {
+    display: block;
+    width: 650px;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.regis {
+    font-size: 12px;
+    display: flex;
+    justify-content: right;
+}
+
+.card .info {
+    padding: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1dede;
+    background-color: #e5e5e5;
+}
+
+.card .info button {
+    height: 30px;
+    width: 80px;
+    border: none;
+    color: #fff;
+    border-radius: 41px;
+    background-color: #000;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: 325px;
+    margin-right: -300px;
+
+}
+
+.forms {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.card .inputs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.inputs span {
+    margin-right: 10px;
+  }
+
+.regis {
+    font-size: small;
+    margin-left: 85px;
+    text-align: left;
+  }
+
+  .card .inputs input {
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 17px;
+    box-shadow: none;
+    outline: none;
+    display:inline-flexbox;
+  }
+
+
+.card .inputs input[type="text"][readonly], .inputs input[readonly] {
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: white;
+    text-decoration: none;
+}

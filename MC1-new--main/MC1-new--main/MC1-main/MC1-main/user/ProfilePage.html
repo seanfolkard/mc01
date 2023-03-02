@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/userpro.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>SportsLink</title>
+</head>
+
+<body>
+    <header>
+		<nav>
+			<ul>
+                <li><h1><a id="title" href="homepage.html">SportsLink</a></h1></li>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="#venues">Venues</a></li>
+				<li><a href="venue-registration.html">Register</a></li>
+				<li><a href="homepage.html #about">About</a></li>
+			</ul>
+		</nav>
+		<a href="profilepage.html"><img id="user-img" src="../images/user.png" alt="User profile"></a>
+	</header>
+    <div class="user-profile container">
+        <div class="card">
+            <div class="info">
+                <b><span>User Profile</span></b>
+                <button id="savebutton">edit</button>
+                <button><a href="login.html" id="donebutton">logout</a></button>
+            </div>
+            <form class="form" id ="user-profile" action="menu.html" method="post">
+            <div class="forms">
+                <div class="inputs">
+                    <span>First Name:</span>
+                    <input type="text" readonly name="firstname" id="firstname" value="">
+                    <span class="regis">Past Registrations:
+                        <li>04/24/2022 - Philippine Sports Stadium</li>
+                        <li>02/06/2022 - PhilSports Football and Athletics Stadium</li>
+                    </span>
+            </div>
+                <div class="inputs">
+                    <span>Last Name:</span>
+                    <input type="text" readonly name="lastname" id="lastname" value="">
+                </div>
+                <div class="inputs">
+                    <span>Email:</span>
+                    <input type="text" readonly name="email" id="email" value="">
+                </div>
+                <div class="inputs">
+                    <span>Contact No.:</span>
+                    <input type="text" readonly name="contact" id="contact" value="">
+                </div>
+                <div class="inputs">
+                    <span>Date of Birth:</span>
+                    <input type="date" readonly name="dob" id="dob" value="">
+                </div>
+                <div class="inputs">
+                    <span>Country:</span>
+                    <input type="text" readonly id="country" value="Philippines">
+                </div>
+                <span class="regis">Past Registrations:
+                    <li>04/24/2022 - Philippine Sports Stadium</li>
+                    <li>02/06/2022 - PhilSports Football and Athletics Stadium</li>
+                </span>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/userpro.js"></script>
+</body>
+
+</html>
